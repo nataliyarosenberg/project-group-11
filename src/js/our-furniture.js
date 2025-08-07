@@ -54,10 +54,13 @@ async function fetchProducts() {
 
 function renderProducts(obj) {
   const furnitures = obj.furnitures;
+// зміни
+  window.allFurnitures = furnitures;
+// зміни
   const markup = furnitures.map(product => {
     const { _id, name, description, price, images } = product;
     return `
-    <li class="furniture-card" id="${_id}"> 
+    <li class="furniture-card" data-id="${_id}"> 
   <img src="${images[0]}" alt="${description}" class="furniture-image" />
   <p class="furniture-name">${name}</p>
   <div class="color-wrap">

@@ -8,33 +8,26 @@
 
     <article class="modal_content">
       <figure class="modal_main-image">
-        <img src="" alt="" />
+        <img class="modal-img" src="" alt="" />
       </figure>
+      <div class="modal_thumbnails"></div>
 
-      <div class="modal_gallery">
-        <!-- зображення -->
+      <h2 id="modal-title" class="modal_title"></h2>
+      <p class="modal_category"></p>
+      <p class="modal_price"></p>
+
+      <div class="modal_rate"></div>
+
+      <div class="modal_colors">
+        <p class="modal_colors-title">Колір</p>
+        <div class="color-checkboxes"></div>
       </div>
 
-      <header class="modal__header">
-        <h2 id="modal-title" class="modal_title">Назва товару</h2>
-        <p class="modal_category">Категорія</p>
-        <p class="modal_price">Ціна</p>
-        <p class="modal_rating">★★★★★<!-- затичка --></p>
-      </header>
+      <p class="modal_description"></p>
 
-      <section class="modal__colors">
-        <h3 class="visually-hidden">Вибір кольору</h3>
-        <p>Колір:</p>
-        <form class="modal_color-options">
-          <!-- Кольори  -->
-        </form>
-      </section>
+      <p class="modal_sizes"></p>
 
-      <p class="modal_description">Опис товару</p>
-
-      <p class="modal_size">Розміри: ---</p>
-
-      <button class="modal_order-btn" type="button">
+      <button type="button" class="modal_order-btn">
         Перейти до замовлення
       </button>
     </article>
