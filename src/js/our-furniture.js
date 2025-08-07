@@ -25,12 +25,12 @@ function renderCategories(categories) {
   class="category-card"
   style="
   background-image: -webkit-image-set(
-    url('/images/our-furniture/${imageName}@1x.png') 1x,
-    url('/images/our-furniture/${imageName}@2x.png') 2x
+    url('./images/our-furniture/${imageName}@1x.png') 1x,
+    url('./images/our-furniture/${imageName}@2x.png') 2x
   );
   background-image: image-set(
-    url('/images/our-furniture/${imageName}@1x.png') 1x,
-    url('/images/our-furniture/${imageName}@2x.png') 2x
+    url('./images/our-furniture/${imageName}@1x.png') 1x,
+    url('./images/our-furniture/${imageName}@2x.png') 2x
   );
 "
 >
