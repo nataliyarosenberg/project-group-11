@@ -3,12 +3,12 @@ import{a as c}from"./assets/vendor-BkCUij8E.js";(function(){const t=document.cre
   class="category-card"
   style="
   background-image: -webkit-image-set(
-    url('./images/our-furniture/${e}@1x.png') 1x,
-    url('./images/our-furniture/${e}@2x.png') 2x
+    url('./src/images/our-furniture/${e}@1x.png') 1x,
+    url('./src/images/our-furniture/${e}@2x.png') 2x
   );
   background-image: image-set(
-    url('./images/our-furniture/${e}@1x.png') 1x,
-    url('./images/our-furniture/${e}@2x.png') 2x
+    url('./src/images/our-furniture/${e}@1x.png') 1x,
+    url('./src/images/our-furniture/${e}@2x.png') 2x
   );
 "
 >
