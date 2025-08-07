@@ -49,3 +49,12 @@
   font-weight: 700;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('../fonts/Raleway-Regular.woff2') format('woff2'),
+         url('../fonts/Raleway-Regular.woff') format('woff');
+         url('../fonts/Raleway-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+} (edited) 
