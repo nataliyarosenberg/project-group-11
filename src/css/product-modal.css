@@ -192,7 +192,6 @@
     letter-spacing: 2px;
     background: none;
     color: #ccc;
-    /* сірий фон */
 }
 
 .star-rating::after {
@@ -200,7 +199,6 @@
     letter-spacing: 2px;
     background: none;
     color: #000;
-    /* чорні зірки */
     position: absolute;
     top: 0;
     left: 0;
