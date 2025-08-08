@@ -1,3 +1,4 @@
+
 .faq {
   padding: 48px 0;
 }
@@ -32,10 +33,10 @@
 .ac .ac-trigger:focus {
   color: var(--color-scheme-1-text);
 }
-.ac-panel {
+/* .ac-panel {
 }
 .ac-panel p {
-}
+} */
 .ac-trigger::after {
   content: "" !important;
   position: absolute;
@@ -44,11 +45,11 @@
   transform: translateY(-50%);
   width: 16.79px !important;
   height: 9.5px !important;
-  background-image: url("./img/accordion.svg");
+  background-image: url("../images/faq/accordion.svg");
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .ac.is-active > .ac-header .ac-trigger::after {
-  background-image: url("./img/accordion-is-open.svg");
+  background-image: url("../images/faq/accordion-is-open.svg");
 }
