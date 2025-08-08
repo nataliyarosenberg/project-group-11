@@ -58,7 +58,7 @@
 .footer-social-link:hover .footer-social-icon,
 .footer-social-link:active .footer-social-icon,
 .footer-social-link:focus .footer-social-icon {
-  fill: #080c09;
+  opacity: 0.5;
 }
 
 /* Tablet Styles */
