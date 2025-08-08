@@ -54,6 +54,7 @@
 .footer-social-icon {
   width: 24px;
   height: 24px;
+  fill: #fff;
 }
 .footer-social-link:hover .footer-social-icon,
 .footer-social-link:active .footer-social-icon,
