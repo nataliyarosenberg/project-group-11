@@ -30,6 +30,13 @@
     border: none;
     font-size: 24px;
     cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.modal_close:hover,
+.modal_close:focus {
+    transform: scale(1.2);
+    outline: none;
 }
 
 .modal_gallery {
@@ -112,35 +119,30 @@
     gap: 12px;
 }
 
-.color-checkboxes label {
-    display: inline-block;
-    width: 24px;
-    height: 24px;
+.modal_colors label {
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
-    border: 2px solid #ccc;
+    border: 2px solid transparent;
     cursor: pointer;
-    position: relative;
-    transition: border-color 0.2s ease;
+    transition: border-color 0.3s ease;
+    display: inline-block;
 }
 
-.color-checkboxes input[type="checkbox"] {
+.modal_colors input[type="radio"] {
     display: none;
 }
 
-.color-checkboxes input[type="checkbox"]:checked+label::after {
-    content: "";
-    position: absolute;
-    top: 6px;
-    left: 6px;
-    width: 10px;
-    height: 10px;
-    background-color: white;
-    border-radius: 50%;
+
+.modal_colors input[type="radio"]:checked+label {
+    border-width: 4px;
+    border-color: #838584;
 }
 
-.color-checkboxes input[type="checkbox"]:checked+label {
-    border-color: #3c6e71;
+.modal_colors label:hover {
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
 }
+
 
 .modal_description {
     font-size: 15px;
@@ -171,6 +173,40 @@
 
 .modal_order-btn:hover {
     background-color: #630d11;
+}
+
+.modal_order-btn:focus {
+    outline: 2px solid #7c0f14;
+    outline-offset: 2px;
+}
+
+.star-rating {
+    position: relative;
+    display: inline-block;
+    font-size: 24px;
+    line-height: 1;
+}
+
+.star-rating::before {
+    content: '★★★★★';
+    letter-spacing: 2px;
+    background: none;
+    color: #ccc;
+    /* сірий фон */
+}
+
+.star-rating::after {
+    content: '★★★★★';
+    letter-spacing: 2px;
+    background: none;
+    color: #000;
+    /* чорні зірки */
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: var(--star-fill, 0%);
+    white-space: nowrap;
 }
 
 /* ПЛАНШЕТ + */
