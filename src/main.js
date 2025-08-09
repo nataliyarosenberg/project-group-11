@@ -1,2 +1,3 @@
-// import Accordion from 'accordion-js';
-// import 'accordion-js/dist/accordion.min.css';
+
+import { initAccordion } from './js/faq.js';
+initAccordion();
