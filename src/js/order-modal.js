@@ -104,8 +104,15 @@ async function handleFormSubmit(e) {
       });
       closeModal();
     } else {
-      const errorData = await response.json();
-      throw new Error(errorData.message || 'Помилка сервера');
+      // Safely handle potential non-JSON error responses
+      const contentType = response.headers.get('content-type');
+      if (contentType && contentType.indexOf('application/json') !== -1) {
+        const errorData = await response.json();
+        throw new Error(errorData.message || 'Помилка сервера');
+      } else {
+        const errorText = await response.text();
+        throw new Error(errorText || 'Помилка сервера');
+      }
     }
   } catch (error) {
     iziToast.error({
