@@ -1,12 +1,13 @@
 .reviews {
   margin-bottom: 64px;
   font-family: 'Raleway', sans-serif;
+  padding-top: 64px;
 }
 
 .reviews-title {
   font-weight: 700;
   font-style: Bold;
-  font-size: 48px;
+  font-size: 36px;
   line-height: 1.2;
   letter-spacing: 1%;
   margin-bottom: 24px;
@@ -15,7 +16,7 @@
 .reviews-description {
   font-weight: 400;
   font-style: Regular;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.6;
   letter-spacing: 0%;
   margin-bottom: 80px;
@@ -23,13 +24,17 @@
 
 .reviews-list {
   display: flex;
-  gap: 24px;
+  gap: 16px;
   justify-content: space-between;
-  margin-bottom: 48px;
+  margin-bottom: 104px;
+}
+
+.third-review {
+  display: none;
 }
 
 .reviews-item {
-  width: 421px;
+  min-width: 280px;
 }
 
 .reviews-stars {
@@ -38,12 +43,13 @@
 .reviews-text {
   font-weight: 500;
   font-style: Medium;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 160%;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   margin-bottom: 24px;
   margin-top: 24px;
-  max-width: 373px;
+  min-width: 232px;
+  padding-right: 48px;
 }
 
 .reviews-reviewer {
@@ -63,6 +69,7 @@
 .reviews-actual-slide {
   display: flex;
   gap: 8px;
+  width: 100px;
 }
 
 .active-dot {
@@ -108,7 +115,7 @@
   align-items: center;
   border: 1px solid rgba(8, 12, 9, 0.15);
   border-radius: 100px;
-  padding: 18px;
+  padding: 17px;
   transition: background-color 250ms ease-in-out, fill 250ms ease-in-out;
 }
 
@@ -130,4 +137,57 @@
 
 .icon-btn:disabled .icon-slider {
   fill: rgba(8, 12, 9, 1);
+}
+
+@media screen and (min-width: 375px) {
+  .second-review {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .reviews {
+    padding-top: 32px;
+  }
+
+  .reviews-list {
+    margin-bottom: 48px;
+  }
+
+  .reviews-item {
+    min-width: 341px;
+  }
+
+  .reviews-title {
+    font-size: 48px;
+  }
+
+  .reviews-description {
+    font-size: 18px;
+  }
+
+  .second-review {
+    display: block;
+  }
+
+  .reviews-text {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1439px) {
+  .reviews {
+    padding-top: 64px;
+  }
+
+  .third-review {
+    display: block;
+  }
+  .reviews-item {
+    min-width: 421px;
+  }
+
+  .reviews-text {
+    min-width: 421px;
+  }
 }
