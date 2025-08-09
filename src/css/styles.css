@@ -9,6 +9,17 @@
 @import url('./fonts.css');
 @import url('./container.css');
 @import url('./base.css');
+
 /* Sections style */
+
 @import url('./header.css');
+
+@import url('./order-modal.css');
 @import url('./our-furniture.css');
+@import url('./product-modal.css');
+@import url('./about-us.css');
+@import url('./reviews.css');
+/* @import url('./faq.css'); */
+@import url('./footer.css');
+
+
