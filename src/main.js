@@ -1,4 +1,4 @@
-import { loadOrderModal, toggleModal } from './js/order-modal';
+import { loadOrderModal, toggleModal } from './js/order-modal.js';
 
 // Завантажуємо модалку при завантаженні сторінки
 document.addEventListener('DOMContentLoaded', () => {
