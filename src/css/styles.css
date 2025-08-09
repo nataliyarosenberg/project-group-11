@@ -10,4 +10,5 @@
 @import url('./container.css');
 @import url('./base.css');
 /* Sections style */
+@import url('./header.css');
 @import url('./our-furniture.css');
