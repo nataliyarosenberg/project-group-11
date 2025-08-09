@@ -17,9 +17,9 @@ document.querySelector('.furniture-list').addEventListener('click', event => {
   if (!btn) return;
 
   const card = btn.closest('.furniture-card');
+  const id = card.dataset.id || card.id;
   if (!card) return;
 
-  const id = card.dataset.id;
   if (!id || !window.allFurnitures) return;
 
   const product = window.allFurnitures.find(item => item._id === id);
