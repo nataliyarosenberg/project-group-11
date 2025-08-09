@@ -5,8 +5,9 @@
   text-align: center;
   margin: 0 auto;
 }
-.container {
-  padding: 0 20px 32px 20px;
+
+.footer-container {
+  padding-bottom: 32px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -64,7 +65,7 @@
 
 /* Tablet Styles */
 @media only screen and (min-width: 768px) {
-  .container {
+  .footer-container {
     padding-bottom: 32px;
     flex-direction: column;
     align-items: center;
@@ -90,7 +91,7 @@
     padding: 0;
   }
 
-  .container {
+  .footer-container {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
