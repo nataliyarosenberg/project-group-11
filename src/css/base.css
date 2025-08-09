@@ -1,11 +1,14 @@
 body {
-  font-family: var(--font-family);
-  font-weight: 700;
-  font-size: 48px;
+  font-family: 'Raleway', sans-serif;
   line-height: 120%;
   letter-spacing: 0.01em;
   color: var(--color-scheme-1-text);
 }
+
+* {
+  font: inherit;
+}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
