@@ -20,6 +20,9 @@
   width: 228px;
   height: 97px;
 }
+.footer-logo-svg {
+  fill: #fff;
+}
 .footer-copyright {
   font-weight: 400;
   font-size: 12px;
@@ -66,6 +69,7 @@
 /* Tablet Styles */
 @media only screen and (min-width: 768px) {
   .footer-container {
+    max-width: 768px;
     padding-bottom: 32px;
     flex-direction: column;
     align-items: center;
@@ -92,6 +96,7 @@
   }
 
   .footer-container {
+    max-width: 1440px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
